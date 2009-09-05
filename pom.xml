@@ -1,24 +1,32 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
-        <groupId>de.cismet.maven</groupId>
-        <artifactId>cismetParent</artifactId>
+        <groupId>de.cismet.cids</groupId>
+        <artifactId>cids-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>de.cismet.cids</groupId>
-    <artifactId>timEasy</artifactId>
-    <packaging>jar</packaging>
+
+    <groupId>de.cismet.cids.navigator.plugin</groupId>
+    <artifactId>tim-easy</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>timEasy</name>
-    <url>http://www.cismet.de</url>   
-    <dependencies>       
+    <packaging>jar</packaging>
+
+    <name>TIM Easy</name>
+    <description>!!! description pending !!!</description>
+
+    <dependencies>
         <dependency>
-            <groupId>de.cismet.cids</groupId>
-            <artifactId>cidsNavigator</artifactId>
+            <groupId>de.cismet.cids.navigator</groupId>
+            <artifactId>cids-navigator</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>timEasy</finalName>
+    </build>
 </project>
 
