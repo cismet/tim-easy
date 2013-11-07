@@ -139,7 +139,7 @@ public class TimEasyPureNewFeature extends PureNewFeature implements InputEventA
             // Node parentNode=SessionManager.getProxy().getNode(parentNodeId,domainserver);
 
             final boolean timLiegPermission = metaClass.getPermissions()
-                        .hasWritePermission(SessionManager.getSession().getUser().getUserGroup());
+                        .hasWritePermission(SessionManager.getSession().getUser());
             final Object o = PFeatureTools.getFirstValidObjectUnderPointer(event, new Class[] { PFeature.class });
             if (event.getComponent() instanceof MappingComponent) {
                 final MappingComponent mc = (MappingComponent)event.getComponent();
